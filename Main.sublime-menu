@@ -1,0 +1,34 @@
+[
+  {
+    "caption": "Preferences",
+    "id": "preferences",
+    "mnemonic": "n",
+    "children": [
+      {
+        "caption": "Package Settings",
+        "mnemonic": "P",
+        "id": "package-settings",
+        "children": [
+          {
+            "id": "persistent_console",
+            "caption": "Persistent Console",
+            "children": [
+              {
+                "caption": "Settings - User",
+                "command": "edit_settings",
+                "args": {
+                  "base_file": "${packages}/Persistent Console/Persistent Console.sublime-settings",
+                  "default": "{\n\t\"enable\": true\n}"
+                }
+              },
+              {
+                "caption": "Toggle",
+                "command": "persistent_console_toggle"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

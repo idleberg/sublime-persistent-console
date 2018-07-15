@@ -1,0 +1,14 @@
+{
+  "name": "sublime-persistent-console",
+  "version": "0.0.0",
+  "author": "Jan T. Sott",
+  "repository": "https://github.com/idleberg/sublime-persistent-console",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "sublime-linter": "^0.4.1"
+  },
+  "scripts": {
+    "test": "sublime-linter"
+  }
+}

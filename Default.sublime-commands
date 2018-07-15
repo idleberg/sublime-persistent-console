@@ -1,0 +1,10 @@
+[
+  {
+    "caption": "Show Console",
+    "command": "show_console"
+  },
+  {
+    "caption": "Persistent Console: Toggle",
+    "command": "persistent_console_toggle"
+  }
+]
