@@ -36,4 +36,4 @@ class ShowConsoleListener(EventListener):
         enablePackage = sublime.load_settings("Persistent Console.sublime-settings").get("enable")
 
         if enablePackage is True:
-           view.window().run_command("show_console")
+            view.window().run_command("show_console")
