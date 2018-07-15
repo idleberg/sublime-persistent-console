@@ -1,5 +1,5 @@
 """
-This borrows heavily from the BinaryPlist package.
+Package that opens console whenever a new window or tab is opened.
 
 https://github.com/idleberg/sublime-persistent-console
 """
@@ -12,7 +12,7 @@ class PersistentConsoleToggleCommand(WindowCommand):
 
     def run(self):
         """Show Console for new windows."""
-        settings = sublime.load_settings("Persistent Console.sublime-settings") or True
+        settings = sublime.load_settings("Persistent Console.sublime-settings")
         enablePackage = settings.get("enable")
 
         if enablePackage is False:
@@ -37,7 +37,7 @@ class ConditionalShowConsoleCommand(WindowCommand):
         activePanels = self.window.active_panel()
 
         if activePanels is None or "console" not in activePanels:
-            self.window.run_command('show_console')
+            self.window.run_command("show_console")
 
 class ShowConsoleCommand(WindowCommand):
     """Adds Show Console Command to Command Palette."""
@@ -49,6 +49,6 @@ class ShowConsoleCommand(WindowCommand):
 class ConditionalShowConsoleListener(EventListener):
     """Adds listener events."""
 
-    def on_new(self, view):
+    def on_new_async(self, view):
         """Listen for new windows."""
-        view.window().run_command('conditional_show_console')
+        view.window().run_command("conditional_show_console")
