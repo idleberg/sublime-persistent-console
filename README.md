@@ -25,6 +25,10 @@ Package that opens console whenever a new window or tab is opened. Useful for pa
 1. Download the latest [stable release](https://github.com/idleberg/sublime-persistent-console/releases)
 2. Unzip the archive to your Sublime Text `Packages` directory
 
+## Usage
+
+To disable the console being openend with each new window or tab, you can use the *Persistent Console: Toggle* command or by changing the *Package Settings* manually.
+
 ## License
 
 This work is licensed under the [The MIT License](LICENSE).
