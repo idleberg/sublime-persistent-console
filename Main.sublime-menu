@@ -20,10 +20,6 @@
                   "base_file": "${packages}/Persistent Console/Persistent Console.sublime-settings",
                   "default": "{\n\t\"enable\": true\n}"
                 }
-              },
-              {
-                "caption": "Toggle",
-                "command": "persistent_console_toggle"
               }
             ]
           }
