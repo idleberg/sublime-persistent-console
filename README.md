@@ -34,9 +34,9 @@ To disable the console being openend with each new window or tab, you can use th
 Additionally, this package provides a shortcut to toggle the console.
 
 Operating System | Shortcut
------------------|---------------------------------------------
-macOS            | <kbd>Cmd</kbd><kbd>Alt</kbd><kbd>J</kbd>
-Linux, Windows   | <kbd>Super</kbd><kbd>Shift</kbd><kbd>J</kbd>
+-----------------|-----------------------------------------------
+macOS            | <kbd>Cmd</kbd>+<kbd>Alt</kbd>+<kbd>J</kbd>
+Linux, Windows   | <kbd>Super</kbd>+<kbd>Shift</kbd>+<kbd>J</kbd>
 
 Yep, that's the same shortcut as in Google Chrome
 
