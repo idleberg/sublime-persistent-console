@@ -4,6 +4,10 @@
     "command": "show_console"
   },
   {
+    "caption": "Toggle Console",
+    "command": "toggle_console"
+  },
+  {
     "caption": "Persistent Console: Toggle",
     "command": "persistent_console_toggle"
   }

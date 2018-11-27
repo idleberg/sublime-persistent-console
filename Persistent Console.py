@@ -28,6 +28,18 @@ class ShowConsoleCommand(WindowCommand):
         """Show Console."""
         self.window.run_command("show_panel", {"panel": "console"})
 
+class ToggleConsoleCommand(WindowCommand):
+    """Adds Toggle Console Command to Command Palette."""
+
+    def run(self):
+        """Toggle Console."""
+        active_panel = self.window.active_panel()
+
+        if active_panel is None:
+            self.window.run_command("show_panel", {"panel": "console"})
+        else:
+            self.window.run_command("hide_panel", {"panel": "console"})
+
 class ShowConsoleListener(EventListener):
     """Adds listener events."""
 
