@@ -38,7 +38,18 @@ Operating System | Shortcut
 macOS            | <kbd>Cmd</kbd>+<kbd>Alt</kbd>+<kbd>J</kbd>
 Linux, Windows   | <kbd>Super</kbd>+<kbd>Shift</kbd>+<kbd>J</kbd>
 
-Yep, that's the same shortcut as in Google Chrome
+Yep, that's the same shortcut as in Google Chrome. If, for example, you're used to the shortcut used in Mozilla Firefox on macOS, you can easily change it by opening *Preferences: Key Bindings*  and add the following:
+
+```json
+[
+  {
+    "keys": [
+      "super+alt+k"
+    ],
+    "command": "toggle_console"
+  }
+]
+```
 
 ## License
 
